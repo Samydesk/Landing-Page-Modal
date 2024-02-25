@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/planetas.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/Styles.css">\
+</head>
+<body>
+    <header class="hero">
+        <div class="container-hero">
+            <div class="contenedor-header">
+                <div class="logo">
+                    <a href="#">Samuel</a>
+                </div>
+                <nav class="header" id="nav">
+                    <ul>
+                        <li><a href="#introduccion" onclick="seleccionar()">ESPACIO</a></li>
+                        <li><a href="#universo" onclick="sleccionar()">UNIVERSO</a></li>
+                        <li><a href="#planetas" onclick="seleccionar">PLANETAS</a></li>
+                        <li><a href="#estrellas" onclick="seleccionar()">ESTRELLAS</a></li>
+                        <li><a href="#galeria" onclick="seleccionar()">GALERIAS</a></li>
+                        <li><a href="#conclusion" onclick="seleccionar()">CONCLUSION</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="textos-hero">
+            <h1>Bienvenido a mi Landing Page</h1>
+            <p>Cree el mejor sitio Web del Universo</p>
+            <a href="#contacto">Contactame</a>
+        </div>
+        <div class="borde-superior" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.27,49.84 C149.99,150.00 354.68,-59.69 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path></svg></div>
+
+        <nav>
+            <div class="menu-mobile inactive"></div>
+        </nav>
+    </header>
+
+    <section class="wave contenedor website">
+        <img src="./img/ilustracion1.jpeg" alt="">
+        <div class="contenedor-textos-main">
+            <h2 class="titulo left" id="introduccion">Espacio</h2>
+            <p class="parrafo">Un avance sobre el espacio y todo lo que conocemos, estamos flotando en un fondo comisco lleno de maravillas que aun no conocemos. </p>
+            <button class="button is-link is-outlined" id="intro">Abrir para mas</button>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="contenedor">
+            <h2 class="titulo left">Frase de Samuel Ramirez:</h2>
+            <p> <span>Aquellos que llegan mas alla de la cima son los que sienten la necesidad de ser alguien en la vida.</span> </p>
+        </div>
+    </section>
+    
+    <section class="cards contenedor" id="planetas">
+        <h2 class="titulo" id="universo">Otra Informacion</h2>
+        <div class="content-cards" id="estrellas">
+         <article class="card has-background-black has-text-white">
+            
+            <img class="imagen" src="./img/calabozo.png" alt="">
+            <h3 class="is-size-5">El Universo</h3>
+            <p>El basto vacio negro iluminado por galaxias</p>   
+            <button class="button is-link" id="card1">Abrir para mas</button>
+         </article>
+
+         <article class="card has-background-black has-text-white">
+            <img class="imagen" src="./img/planeta.png" alt="">
+            <h3 class="is-size-5">Los Planetas</h3>
+            <p>los cuerpos celestes girando en orbita.</p>   
+            <button class="button is-link" id="card2">Abrir para mas</button>
+         </article>
+
+         <article class="card has-background-black has-text-white">
+            <img class="imagen" src="./img/universo.png" alt="">
+            <h3 class="is-size-5">Las Estrellas</h3>
+            <p>Las luces que decoran el espacio</p>   
+            <button class="button is-link" id="card3">Abrir para mas</button>
+         </article>
+        </div>
+
+    </section>
+
+
+    <section class="galeria">
+        <div class="contenedor">
+            <h2 class="titulo" id="galeria">Galeria</h2>
+            <article class="galeria-cont">
+                <img src="./img/imagen1.jpeg" alt="">
+                <img src="./img/imagen2.jpeg" alt="">
+                <img src="./img/imagen3.jpeg" alt="">
+                <img src="./img/imagen4.jpeg" alt="">
+                <img src="./img/imagen5.jpeg" alt="">
+                <img src="./img/imagen6.jpeg" alt="">
+            </article>
+        </div>
+    </section>
+    
+<section class="info-last">
+
+<div class="contenedor last-section">
+    <div class="contenedor-textos-main">
+    <h2 class="titulo left" id="conclusion">Conclusion</h2>
+    <p class="parrafo">Entones Estamos en este basto universo por alguna razon? O somos la prueba de un Asar de suerte del Destino...</p>
+    <button class="button is-link" id="conclu">Abrir para mas</button>
+    </div>
+    <img src="./img/ilustracion..jpeg" alt="">
+</div>
+
+<div class="svg-wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.27,49.84 C149.99,150.00 354.68,-59.69 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #474afc;"></path></svg></div>
+</section>
+
+<footer id="contacto">
+    <div class="contenedor">
+        <h2 class="titulo">Contactame</h2>
+        <form action="" class="form">
+            <input class="input" type="text" name="" id="" placeholder="Nombre">
+            <input class="input" type="email" name="" id="" placeholder="Email">
+            <textarea class="input" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <input class="input" type="submit" value="Enviar">
+        </form>
+    </div>
+    <h1>Elaborado por Samydev</h1>
+</footer>
+
+<!--modal1-->
+<div class="modal" id="modal1">
+    <div class="modal-background "></div>
+    <div class="modal-card has-text-white">
+      <header class="modal-card-head has-background-link">
+        <p class="modal-card-title has-text-white">Introduccion</p>
+        <button class="delete" aria-label="close" id="closeModal"></button>
+      </header>
+      <section class="modal-card-body has-background-black">
+        <div>
+            <h1 class="is-size-4">El Espacio</h1>
+            <p>El espacio es un vacío casi perfecto sin aire. No está vacío: contiene muchas formas de radiación, así como partículas de gas, polvo y otra materia flotando en el vacío.
+
+                Desde la Tierra, podemos observar planetas, estrellas y galaxias que se encuentran a 46.5 mil millones de años luz en cualquier dirección desde nuestro planeta. Esta región del espacio se llama el universo observable. La edad estimada del universo oscila entre 11.4 mil millones y 13.8 mil millones de años.</p>
+                <img src="./img/modal1.jpg" alt="">
+                <p>Desde nuestra perspectiva terrestre, el espacio exterior es todo lo que se encuentra fuera del límite que separa la Tierra del espacio. Hay diferentes definiciones de dónde comienza exactamente el espacio exterior. El límite más utilizado es la línea de Karman, que se encuentra a 100 km sobre el nivel medio del mar. A partir de esta marca, el aire se vuelve demasiado delgado para que los aviones regulares (que dependen de la sustentación) puedan volar.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--Modal2-->
+  <div class="modal" id="modal2">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-white">
+      <header class="modal-card-head has-background-link">
+        <p class="modal-card-title has-text-white">El Universo</p>
+        <button class="delete" aria-label="close" id="closeModal2"></button>
+      </header>
+      <section class="modal-card-body has-background-black">
+        <div>
+            <h1 class="is-size-4">Universo</h1>
+            <p>El universo es la conjunción de todo aquello existente; ya sea material como los planetas, las estrellas, galaxias o en contrariedad inmaterial como la energía, el espacio o el tiempo. Es por esto, que podemos afirmar que el universo es el espacio y el tiempo en el que se encuentran los planetas y sus leyes físicas que los rigen (como por ejemplo la ley de gravedad).</p>
+            <br>
+        <p>El universo, a grandes rasgos, está formado por galaxias interconectadas que originan cúmulos de galaxias que a su vez se relacionan con otros cúmulos generando, en consecuencia una red cósmica que se expande a lo largo del universo.
+        </p>
+        <img src="./img/modal 2.jpg" alt="">
+        <br>
+        <p>El universo tiene una extensión variable y difícil de calcular pues puede a su vez contener otros universos. A su vez, muchas veces solemos pensar que el universo es estático pero la realidad es que se trata de un sitio cambiante cargado de fenómenos.
+        </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--Modal3-->
+  <div class="modal" id="modal3">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-white">
+      <header class="modal-card-head has-background-link">
+        <p class="modal-card-title has-text-white">Los Planetas</p>
+        <button class="delete" aria-label="close" id="closeModal3"></button>
+      </header>
+      <section class="modal-card-body has-background-black">
+        <div>
+            <h1 class="is-size-4">Planetas</h1>
+            <p>Un planeta es un cuerpo celeste que gira alrededor de una estrella, y que tiene suficiente masa para alcanzar un equilibrio hidrostático (entre la fuerza de gravedad y la energía que genera su núcleo). Este equilibrio le permite que mantenga su forma de esfera, que domine órbita (impide que otros cuerpos invadan su recorrido) y que no emita luz propia, sino que refleje la luz de la estrella alrededor de la que gravita.
+            </p>
+            <br>
+            <img src="./img/modal 3.jpg" alt="">
+            <p>
+                Nuestro planeta Tierra, al igual que los siete planetas restantes del sistema solar, giran en órbita alrededor del Sol. Todos comparten las características que definen a un cuerpo como “planeta” y, sin embargo, presentan diferencias según su composición y su ubicación en el sistema solar.
+            </p>
+            <br>
+            <p>
+               <p>
+                Son ocho los planetas de nuestro sistema solar, en orden desde el más cercano hasta el más alejado del Sol:
+               </p>
+                <br>
+                <p>
+                    Mercurio: Es el planeta más pequeño del sistema solar, tiene un cuerpo rocoso similar al de la Tierra y su núcleo ocupa casi la mitad del planeta (lo que genera un campo magnético potente). No tiene satélites naturales.
+                </p>
+
+<br>
+<p>
+    Venus: Es el tercer planeta en cuanto a tamaño (de menor a mayor), tiene un diámetro de tamaño similar al de la Tierra y no posee satélites naturales.
+</p>
+<br>
+<p>
+    Tierra: Es el cuarto planeta en cuanto a su tamaño, que prosigue a Venus, y tiene un solo satélite natural, la Luna. Es el planeta más denso del sistema solar y el único que tiene agua en su superficie.
+</p>
+<br>
+<p>
+    Marte: Es el segundo planeta más pequeño y también se lo conoce como “el planeta rojo” debido a su aspecto rojizo por el óxido de hierro de su superficie. Tiene dos pequeños satélites naturales: Fobos y Deimos.
+</p>
+<br>
+<p>
+    Júpiter: Es el planeta más grande del sistema solar. Es de tipo gaseoso formado, en su mayor parte, por hidrógeno y helio, y tiene sesenta y nueve satélites naturales.
+</p>
+<br>
+<p>
+    Saturno: Es el segundo planeta más grande (le sigue a Júpiter) y es el único planeta del sistema solar que tiene anillos planetarios (anillos de polvo y otras partículas pequeñas que giran a su alrededor). Tiene sesenta y un satélites detectados, aunque se calcula que el número total podría rondar en los doscientos satélites.
+</p>
+<br>
+<p>
+    Urano: Es el tercer planeta de mayor tamaño y tiene la atmósfera más fría del sistema solar. Su interior está compuesto principalmente por hielo y roca, y tiene veintisiete satélites naturales detectados.
+</p>
+<br>
+<p>
+    Neptuno: Es el cuarto planeta de mayor tamaño y tiene una composición similar a la de Urano, con una gran proporción de hielo y de roca en su interior. Su superficie es de aspecto azul por la presencia del gas metano. Tiene catorce satélites detectados.
+</p>
+            </p>
+            <img src="./img/solar-system-439046_1920.jpg" alt="">
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--Modal4-->
+  <div class="modal" id="modal4">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-white">
+      <header class="modal-card-head has-background-link">
+        <p class="modal-card-title has-text-white">Las Estrellas</p>
+        <button class="delete" aria-label="close" id="closeModal4"></button>
+      </header>
+      <section class="modal-card-body has-background-black">
+        <div>
+            <h1 class="is-size-4">
+                Estrellas
+            </h1>
+            <p>
+                Las estrellas son motores de energía cósmica que producen calor, luz, rayos ultravioleta, rayos X y otras formas de radiación. Están compuestas casi en su totalidad de gas y plasma, un estado de supercalentamiento de la materia compuesta de partículas subatómicas. Aunque la estrella más conocida, el Sol, existe en solitario, tres de cada cuatro estrellas existen como parte de un sistema binario compuesto por dos estrellas orbitando mutuamente. 
+            </p>
+            <br>
+            <p>
+                Nadie sabe cuántas estrellas existen, pero podrían alcanzar un número extraordinario. Nuestro universo podría albergar más de 100 000 millones de galaxias, y cada una de ellas podría tener más de 100 000 millones de estrellas. Tan sólo en una noche clara, desde la Tierra pueden observarse alrededor de 3000 estrellas a simple vista. Los humanos de diferentes culturas han dibujado el cielo mediante estas estrellas.
+            </p>
+            <img src="./img/los_mejores_lugares_para_ver_las_estrellas_en_espana_52159_600.jpg" alt="">
+            <br>
+            <p>
+                Algunas estrellas han sobresalido siempre del resto. Su brillo es un factor de cuanta energía despiden, lo cual se conoce como su luminosidad, y también la distancia a la que se encuentran de la Tierra. Las estrellas del cielo también pueden parecer de diferentes colores porque sus temperaturas no son iguales. Las estrellas calientes son blancas o azules, mientras que las más frías parecen tener tonos rojos o anaranjados.
+            </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--Modal 5-->
+  <div class="modal" id="modal5">
+    <div class="modal-background"></div>
+    <div class="modal-card has-text-white">
+      <header class="modal-card-head has-background-link">
+        <p class="modal-card-title has-text-white">Estamos Solo?</p>
+        <button class="delete" aria-label="close" id="closeModal5"></button>
+      </header>
+      <section class="modal-card-body has-background-black">
+        <div>
+            <h1 class="is-size-4">Esta es la conclusion</h1>
+            <p>
+                El universo es un sitio grande, muy grande, y ahora somos conscientes de que, además de galaxias y estrellas, los planetas son muy comunes en él. Esto puede parecer algo muy obvio, pero hasta 1992 no tuvimos constancia observacional de la existencia de planetas orbitando estrellas distintas de nuestro Sol.
+            </p>
+            <br>
+            <p>
+                Así que hoy día tenemos constancia de que en la parte del universo que podemos ver, el universo observable, hay unas cien mil millones de galaxias. En cada una de esas galaxias estimamos que han de haber unas cien mil millones de estrellas. Y ahora sabemos que hay aproximadamente un planeta por cada estrella.
+            </p>
+            <br>
+            <img src="./img/modal5.jpg" alt="">
+            <p>
+                Conociendo todos estos datos no es extraño que el ser humano se cuestione: ¿Estamos solos en el universo? No es para nada un planteamiento original, pues la humanidad se lo ha preguntado desde que tuvo la constancia de su lugar en el universo. 
+            </p>
+        </div>
+      </section>
+    </div>
+  </div>
+<script src="/JavaScript.js"></script>
+</body>
+</html>  
